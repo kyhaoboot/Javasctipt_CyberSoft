@@ -39,10 +39,9 @@
             Bài tập 4
           </button>
         </div>
-
         <!-- Tabs content -->
         <div class="tab-content mt-4">
-          <div class="tab-panel">
+          <div class="tab-panel hidden">
             <div class="">
               <h1 class="text-center text-2xl">Quản Lý Tuyển Sinh</h1>
               <h2 class="text-center text-xl">
@@ -55,11 +54,9 @@
 
               <div class="relative overflow-x-auto">
                 <table
-                  class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400"
+                  class="w-full text-sm text-left rtl:text-right text-gray-500"
                 >
-                  <thead
-                    class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400"
-                  >
+                  <thead class="text-xs text-gray-700 uppercase bg-gray-50">
                     <tr>
                       <th scope="col" class="px-6 py-3">Khu Vực</th>
                       <th scope="col" class="px-6 py-3">A</th>
@@ -68,12 +65,10 @@
                     </tr>
                   </thead>
                   <tbody>
-                    <tr
-                      class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200"
-                    >
+                    <tr class="bg-white border-b border-gray-200">
                       <th
                         scope="row"
-                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
                       ></th>
                       <td class="px-6 py-4">+2 Điểm</td>
                       <td class="px-6 py-4">+1 Điểm</td>
@@ -82,11 +77,9 @@
                   </tbody>
                 </table>
                 <table
-                  class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400"
+                  class="w-full text-sm text-left rtl:text-right text-gray-500"
                 >
-                  <thead
-                    class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400"
-                  >
+                  <thead class="text-xs text-gray-700 uppercase bg-gray-50">
                     <tr>
                       <th scope="col" class="px-6 py-3">Đối tượng</th>
                       <th scope="col" class="px-6 py-3">1</th>
@@ -95,9 +88,7 @@
                     </tr>
                   </thead>
                   <tbody>
-                    <tr
-                      class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200"
-                    >
+                    <tr class="bg-white border-b border-gray-200">
                       <th
                         scope="row"
                         class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
@@ -114,7 +105,7 @@
               <div class="px-4">
                 <label
                   for=""
-                  class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                  class="block mb-2 text-sm font-medium text-gray-900"
                   >Nhập điểm Chuẩn:</label
                 >
                 <input
@@ -178,7 +169,7 @@
               <div class="px-4">
                 <label
                   for=""
-                  class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                  class="block mb-2 text-sm font-medium text-gray-900"
                   >Nhập điểm môn thứ 2:</label
                 >
                 <input
@@ -194,7 +185,7 @@
               <div class="px-4">
                 <label
                   for=""
-                  class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                  class="block mb-2 text-sm font-medium text-gray-900"
                   >Nhập điểm môn thứ 3:</label
                 >
                 <input
@@ -215,13 +206,351 @@
                 Submit
               </button>
             </form>
-            <div id="showResult" class="">
-              <!-- <h1 class="text-green-600">Bạn đã đậu. Tổng điểm: 53</h1> -->
-            </div>
+            <div id="showResult" class=""></div>
           </div>
-          <div class="tab-panel hidden">Nội dung của Tab 2</div>
-          <div class="tab-panel hidden">Nội dung của Tab 3</div>
-          <div class="tab-panel hidden">Nội dung của Tab 4</div>
+          <div class="tab-panel hidden">
+            <div class="">
+              <h1 class="text-center text-2xl">Tính tiền điện</h1>
+              <div class="relative overflow-x-auto">
+                <table
+                  class="w-full text-sm text-left rtl:text-right text-gray-500"
+                >
+                  <thead class="text-xs text-gray-700 uppercase bg-gray-50">
+                    <tr>
+                      <th scope="col" class="px-6 py-3">Số Kw</th>
+                      <th scope="col" class="px-6 py-3">Giá</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="bg-white border-b border-gray-200">
+                      <th scope="row" class="px-6 py-4">50Kw đầu</th>
+
+                      <td class="px-6 py-4">500đ/Kw</td>
+                    </tr>
+                    <tr class="bg-white border-b border-gray-200">
+                      <th scope="row" class="px-6 py-4">50Kw kế</th>
+
+                      <td class="px-6 py-4">650đ/Kw</td>
+                    </tr>
+                    <tr class="bg-white border-b border-gray-200">
+                      <th scope="row" class="px-6 py-4">100Kw kế</th>
+
+                      <td class="px-6 py-4">850đ/Kw</td>
+                    </tr>
+                    <tr class="bg-white border-b border-gray-200">
+                      <th scope="row" class="px-6 py-4">150Kw kế</th>
+
+                      <td class="px-6 py-4">1100đ/Kw</td>
+                    </tr>
+                    <tr class="bg-white border-b border-gray-200">
+                      <th scope="row" class="px-6 py-4">Còn lại</th>
+
+                      <td class="px-6 py-4">1300đ/Kw</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <form action="" class="grid grid-cols-3 gap-10">
+              <div class="px-4">
+                <label
+                  for=""
+                  class="block mb-2 text-sm font-medium text-gray-900"
+                  >Nhập họ tên:</label
+                >
+                <input
+                  type="text"
+                  id="nameKw"
+                  name="nameKw"
+                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                  placeholder="Nhập họ tên"
+                  required
+                />
+              </div>
+
+              <div class="px-4">
+                <label
+                  for=""
+                  class="block mb-2 text-sm font-medium text-gray-900"
+                  >Nhập số Kw:</label
+                >
+                <input
+                  type="number"
+                  id="kwNum"
+                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                  placeholder="Nhập số Kw"
+                  required
+                />
+              </div>
+
+              <button
+                id="checkkw"
+                type="submit"
+                class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-20 px-2 py-3 text-center mt-4"
+                onclick="checkKw()"
+              >
+                Submit
+              </button>
+            </form>
+            <div id="showMoney" class=""></div>
+          </div>
+          <div class="tab-panel hidden">
+            <div class="">
+              <h1 class="text-center text-2xl">Tính thuế thu nhập cá nhân</h1>
+
+              <div class="relative overflow-x-auto">
+                <table
+                  class="w-full text-sm text-left rtl:text-right text-gray-500"
+                >
+                  <thead class="text-xs text-gray-700 uppercase bg-gray-50">
+                    <tr>
+                      <th scope="col" class="px-6 py-3">
+                        Thu nhập chịu thuế(triệu)
+                      </th>
+                      <th scope="col" class="px-6 py-3">Thuế suất (%)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="bg-white border-b border-gray-200">
+                      <th
+                        scope="row"
+                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+                      >
+                        Đến 60tr
+                      </th>
+                      <td class="px-6 py-4">5%</td>
+                    </tr>
+                    <tr class="bg-white border-b border-gray-200">
+                      <th
+                        scope="row"
+                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+                      >
+                        Trên 60 đến 120
+                      </th>
+                      <td class="px-6 py-4">10%</td>
+                    </tr>
+                    <tr class="bg-white border-b border-gray-200">
+                      <th
+                        scope="row"
+                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+                      >
+                        Trên 120 đến 210
+                      </th>
+                      <td class="px-6 py-4">15%</td>
+                    </tr>
+                    <tr class="bg-white border-b border-gray-200">
+                      <th
+                        scope="row"
+                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+                      >
+                        Trên 210 đến 384
+                      </th>
+                      <td class="px-6 py-4">20%</td>
+                    </tr>
+                    <tr class="bg-white border-b border-gray-200">
+                      <th
+                        scope="row"
+                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+                      >
+                        Trên 384 đến 624
+                      </th>
+                      <td class="px-6 py-4">25%</td>
+                    </tr>
+                    <tr class="bg-white border-b border-gray-200">
+                      <th
+                        scope="row"
+                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+                      >
+                        Trên 624 đến 960
+                      </th>
+                      <td class="px-6 py-4">30%</td>
+                    </tr>
+                    <tr class="bg-white border-b border-gray-200">
+                      <th
+                        scope="row"
+                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+                      >
+                        Trên 960
+                      </th>
+                      <td class="px-6 py-4">35%</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <form action="" class="grid grid-cols-3 gap-10">
+              <div class="px-4">
+                <label
+                  for=""
+                  class="block mb-2 text-sm font-medium text-gray-900"
+                  >Nhập Họ Tên:</label
+                >
+                <input
+                  type="text"
+                  id="nameBT3"
+                  name="nameBT3"
+                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                  placeholder="Nhập Họ Tên"
+                  required
+                />
+              </div>
+
+              <div class="px-4">
+                <label
+                  for=""
+                  class="block mb-2 text-sm font-medium text-gray-900"
+                  >Nhập tổng thu nhập năm:</label
+                >
+                <input
+                  type="number"
+                  id="moneyYear"
+                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                  placeholder="Nhập Tổng thu nhập năm"
+                  required
+                />
+              </div>
+              <div class="px-4">
+                <label
+                  for=""
+                  class="block mb-2 text-sm font-medium text-gray-900"
+                  >Nhập số người phụ thuộc:</label
+                >
+                <input
+                  type="number"
+                  min="0"
+                  max="10"
+                  id="perTax"
+                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                  placeholder="Nhập số người phụ thuộc"
+                  required
+                />
+              </div>
+
+              <button
+                id="showTax"
+                type="submit"
+                class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-20 px-2 py-3 text-center mt-4"
+              >
+                Submit
+              </button>
+            </form>
+            <div id="showResult3" class=""></div>
+          </div>
+          <div class="tab-panel">
+            <div class="">
+              <h1 class="text-center text-2xl">Tính Tiền Cáp</h1>
+              <div class="relative overflow-x-auto">
+                <table
+                  class="w-full text-sm text-left rtl:text-right text-gray-500"
+                >
+                  <thead class="text-xs text-gray-700 uppercase bg-gray-50">
+                    <tr>
+                      <th scope="col" class="px-6 py-3"></th>
+                      <th scope="col" class="px-6 py-3">Phí xử lý hóa đơn</th>
+                      <th scope="col" class="px-6 py-3">Phí dịch vụ cơ bản</th>
+                      <th scope="col" class="px-6 py-3">Thuê kênh cao cấp</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="bg-white border-b border-gray-200">
+                      <th
+                        scope="row"
+                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+                      >
+                        Nhà dân
+                      </th>
+                      <td class="px-6 py-4">4.5$</td>
+                      <td class="px-6 py-4">20.5$</td>
+                      <td class="px-6 py-4">7.5$ / kênh</td>
+                    </tr>
+                    <tr class="bg-white border-b border-gray-200">
+                      <th
+                        scope="row"
+                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+                      >
+                        Doanh nghiệp
+                      </th>
+                      <td class="px-6 py-4">15$</td>
+                      <td class="px-6 py-4">
+                        75$ cho tổng 10 kết nối đầu, mỗi kết nối thêm 5$ / kết
+                        nối
+                      </td>
+                      <td class="px-6 py-4">50$ / kênh</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <form action="" class="grid grid-cols-3 gap-10">
+              <div class="px-4">
+                <label
+                  for=""
+                  class="block mb-2 text-sm font-medium text-gray-900"
+                  >Chọn Loại Khách Hàng</label
+                >
+                <select
+                  id="typeCustomer"
+                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                >
+                  <option selected value="">Chọn Loại Khách Hàng</option>
+                  <option value="NhaDan">Nhà Dân</option>
+                  <option value="DoanhNghiep">Doanh Nghiệp</option>
+                </select>
+              </div>
+              <div class="px-4">
+                <label
+                  for=""
+                  class="block mb-2 text-sm font-medium text-gray-900"
+                  >Nhập Mã khách hàng</label
+                >
+                <input
+                  type="text"
+                  id="idCustomer"
+                  name=""
+                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                  placeholder="Nhập Mã khách hàng"
+                  required
+                />
+              </div>
+
+              <div class="px-4">
+                <label
+                  for=""
+                  class="block mb-2 text-sm font-medium text-gray-900"
+                  >Số kênh cao cấp</label
+                >
+                <input
+                  type="number"
+                  id="numChanelHigh"
+                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                  placeholder="Số kênh cao cấp"
+                  required
+                />
+              </div>
+              <div style="display: none" class="px-4" id="numCon">
+                <label
+                  for=""
+                  class="block mb-2 text-sm font-medium text-gray-900"
+                  >Số kết nối</label
+                >
+                <input
+                  type="number"
+                  id="numConnect"
+                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                  placeholder="Số kết nối"
+                  required
+                />
+              </div>
+              <button
+                id="MoneyChanel"
+                type="submit"
+                class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-20 px-2 py-3 text-center mt-4"
+              >
+                Submit
+              </button>
+            </form>
+            <div id="showMoneyChanel" class=""></div>
+          </div>
         </div>
       </div>
     </section>
